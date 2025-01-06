@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>SilkWgpu</RootNamespace>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Silk.NET.WebGPU" Version="2.22.0"/>
+        <PackageReference Include="Silk.NET.WebGPU.Extensions.WGPU" Version="2.22.0"/>
+        <PackageReference Include="Silk.NET.WebGPU.Native.WGPU" Version="2.22.0"/>
+        <PackageReference Include="Silk.NET.Windowing" Version="2.22.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="Shaders\triangle.wgsl">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+</Project>
